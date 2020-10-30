@@ -1091,7 +1091,7 @@ class BaseProtocol(object):
                     player.notPossible()
                     return
 
-                player.autoWalk(walkpattern)
+                player.autoWalk(walkPattern)
 
             if (position.x == 0xFFFF or player.inRange(position, 1, 1)) and (onPosition.x == 0xFFFF or player.canSee(onPosition)):
                 game.scriptsystem.get('useWith').run(thing=thing, creature=player, position=stackPosition1, onPosition=stackPosition2, onThing=onThing)

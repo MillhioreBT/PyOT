@@ -702,7 +702,7 @@ class Rune(Spell):
                 
             if not self.targetType == TARGET_AREA:
                 for call in self.effectOnTarget:
-                    call(target=target, caster=creature, strength=strength)
+                    call(target=target, caster=creature, strength=strength, position=position)
                 
                 if self._targetEffect:
                     target.magicEffect(self._targetEffect)
